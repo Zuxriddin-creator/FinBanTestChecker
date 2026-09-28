@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+temp_*.jpg
+temp_*.jpeg
+temp_*.png
+temp_*.webp
