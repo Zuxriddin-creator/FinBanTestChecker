@@ -24,10 +24,8 @@ from google.genai import types
 # CONFIGURATION
 # ============================================================
 
-TELEGRAM_BOT_TOKEN = "8418170279:AAEKr8LhRESc_2jOZIVGgO4VBjGyCrAGTt8"
-
-GEMINI_API_KEY = "AQ.Ab8RN6J0vgvilx9KJzPwRdQrvqAYuGmWtqtGHEWBcu37UegpKQ"
-
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 # Current Gemini model
 MODEL_NAME = "gemini-3.8-flash"
 
